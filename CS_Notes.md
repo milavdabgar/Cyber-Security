@@ -59,7 +59,7 @@ Finally, we'll cover two crucial cryptographic concepts: **Asymmetric Encryption
 
 Let's dive deeper into the world of cyber security and explore these crucial topics!
 
-### Overview of Cyber Security: Definition, importance, and evolution.
+### Overview of Cyber Security
 
 **Definition:**
 Cyber security is the practice of protecting systems, networks, and programs from digital attacks or unauthorized access. It involves the use of various tools, technologies, and processes to safeguard electronic information, devices, and infrastructure from potential threats.
