@@ -90,7 +90,6 @@
 
 **Summary:** Both public key and private key cryptography are essential in the field of cybersecurity. Public key cryptography provides a robust method for secure key exchange and authentication, while private key cryptography is efficient for encrypting large volumes of data. Understanding their differences and applications helps in designing secure communication systems.
 
-
 ### Q.1 (c) Explain various security services and security mechanism (07)
 
 **Security Services:**
@@ -498,7 +497,7 @@ A digital signature is a cryptographic technique used to validate the authentici
 **Conclusion:**
 Digital signatures are a critical component of modern cybersecurity, providing strong guarantees of authenticity, integrity, and non-repudiation. They are widely used in various applications to secure digital communications and transactions.
 
-### Q2 (b) Define : Torjans, Rootkit, Backdoors, Keylogger (04)
+### Q2 (b) Define : Trojans, Rootkit, Backdoors, Keylogger (04)
 
 **Definitions of Trojans, Rootkits, Backdoors, and Keyloggers:**
 
