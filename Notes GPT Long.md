@@ -25,21 +25,15 @@ We would like to thank all the educators and professionals who have contributed 
 
 We hope this book serves as a valuable resource in your journey towards mastering cyber security. Happy learning and best of luck with your exams!
 
-## Unit - I: Introduction to Cyber Security & Cryptography
+## Introduction to Cyber Security & Cryptography
 
 In this unit, we embark on the foundational journey of understanding **Cyber Security** and **Cryptography**. With the digital landscape continuously evolving, the importance of safeguarding information and securing communication channels has become crucial. This unit will introduce you to the basic concepts, importance, and evolution of cyber security and cryptography.
 
-### What is Cyber Security?
+### Cyber Security Basics
 
 **Cyber Security** refers to the practice of protecting systems, networks, and programs from digital attacks. These attacks are usually aimed at accessing, changing, or destroying sensitive information, extorting money from users, or interrupting normal business processes.
 
-#### Key Objectives of Cyber Security:
-
-- **Confidentiality:** Ensuring that information is not accessed by unauthorized individuals.
-- **Integrity:** Protecting information from being altered by unauthorized users.
-- **Availability:** Ensuring that information and resources are available to authorized users when needed.
-
-#### Importance of Cyber Security
+#### Importance
 
 In an increasingly interconnected world, the significance of cyber security cannot be overstated. Here's why it is essential:
 
@@ -48,7 +42,7 @@ In an increasingly interconnected world, the significance of cyber security cann
 - **Compliance:** Adhering to legal and regulatory requirements to avoid penalties.
 - **Economic Stability:** Ensuring the smooth operation of financial systems and protecting against economic disruption.
 
-#### Evolution of Cyber Security
+#### Evolution
 
 The journey of cyber security has evolved significantly over the decades:
 
@@ -58,32 +52,7 @@ The journey of cyber security has evolved significantly over the decades:
 4. **2000s:** Cyber security became a strategic priority for organizations, with the introduction of advanced security protocols and encryption methods.
 5. **2010s-Present:** The era of sophisticated cyber threats such as ransomware, phishing, and advanced persistent threats (APTs) has led to the adoption of comprehensive cyber security frameworks and practices.
 
-#### Introduction to Cryptography
-
-**Cryptography** is the art and science of securing information by converting it into a format that is unreadable to unauthorized users. It plays a crucial role in ensuring data privacy and security in digital communication.
-
-**Key Concepts in Cryptography:**
-
-- **Encryption:** The process of converting plain text into cipher text using an algorithm and a key.
-- **Decryption:** The process of converting cipher text back into plain text using a key.
-- **Symmetric Key Cryptography:** Both sender and receiver use the same key for encryption and decryption.
-- **Asymmetric Key Cryptography:** Uses a pair of keys - a public key for encryption and a private key for decryption.
-
-**Memorization Hints**
-
-To remember the objectives of cyber security, use the acronym **CIA**:
-- **C** for **Confidentiality**
-- **I** for **Integrity**
-- **A** for **Availability**
-
-For the evolution of cyber security, think of the decades in sequence and associate each with a key development:
-- **1960s:** Birth of computer systems.
-- **1970s-1980s:** Network security with ARPANET.
-- **1990s:** Internet and basic security tools.
-- **2000s:** Strategic importance of security.
-- **2010s-Present:** Advanced cyber threats and comprehensive frameworks.
-
-### The CIA Triad (Confidentiality, Integrity, Availability)
+### Key Objectives of Cyber Security (The CIA Triad)
 
 The CIA Triad is a fundamental concept in cyber security, representing the core principles that ensure the protection and reliability of information systems. Understanding and implementing the CIA Triad is crucial for designing secure systems that safeguard data and maintain trust.
 
@@ -92,12 +61,14 @@ The CIA Triad is a fundamental concept in cyber security, representing the core 
 **Confidentiality** ensures that sensitive information is accessed only by authorized individuals and entities. This principle protects data from unauthorized disclosure and maintains privacy.
 
 **Key Points:**
+
 - **Encryption:** Encoding data to make it unreadable without the proper key.
 - **Access Controls:** Restricting access to information based on user roles and permissions.
 - **Authentication:** Verifying the identity of users before granting access.
 - **Data Masking:** Obscuring specific data within a database to protect sensitive information.
 
 **Significance:**
+
 - Protects personal and sensitive data from breaches.
 - Maintains privacy and confidentiality in communications.
 - Ensures compliance with legal and regulatory requirements.
@@ -138,19 +109,7 @@ While each component of the CIA Triad serves a distinct purpose, they are interc
 - Encrypting data (Confidentiality) helps protect it from unauthorized access, while checksums (Integrity) ensure it has not been tampered with.
 - Redundancy and backup systems (Availability) support the continuous protection and integrity of data.
 
-**Memorization Hints**
-
-To remember the CIA Triad components, think of the acronym **CIA**:
-- **C** for **Confidentiality**
-- **I** for **Integrity**
-- **A** for **Availability**
-
-**Mnemonic for the significance**:
-- **Confidentiality:** "Keep Secrets Safe"
-- **Integrity:** "Data Stays True"
-- **Availability:** "Always Accessible"
-
-### Key Terms in Cyber Security
+### Key Terms of Cyber Security
 
 Understanding key terms in cyber security is essential for grasping the concepts and practices in the field. Here are some fundamental terms and their explanations:
 
@@ -187,7 +146,8 @@ Risk in cyber security refers to the potential for loss or damage when a threat 
 - **Vulnerability:** Weaknesses that could be exploited.
 - **Impact:** The potential damage or loss.
 
-#### Security Policy
+Security Policy
+
 A security policy is a formal set of rules and practices that define how an organization manages, protects, and distributes sensitive information. It outlines responsibilities and expected behaviors to ensure security.
 
 **Components of a Security Policy:**
@@ -346,7 +306,7 @@ To remember security concerns for each OSI layer, use the following mnemonic:
 - **P**resentation
 - **A**pplication
 
-### Cryptography
+### Cryptography Basics
 
 Cryptography is the science and art of securing communication and data through the use of mathematical techniques. It ensures that information is protected from unauthorized access and tampering, providing confidentiality, integrity, authentication, and non-repudiation.
 
@@ -489,68 +449,22 @@ Cryptography is the science and art of securing communication and data through t
 
 Cryptography is an essential component of modern information security, providing the foundation for secure communication, data protection, and trust in digital systems. Its continued evolution and application are crucial in addressing emerging security challenges and protecting sensitive information in an increasingly interconnected world.
 
-### Symmetric and Asymmetric Encryption
+### Symmetric vs Asymmetric Encryption
 
-Encryption is a fundamental technique in cyber security used to protect data from unauthorized access. There are two primary types of encryption: symmetric and asymmetric. Each has distinct principles and scenarios where it is most effective.
-
-#### Symmetric Encryption
-
-**Principles:**
-- **Single Key:** Uses the same key for both encryption and decryption.
-- **Speed:** Generally faster than asymmetric encryption due to simpler algorithms.
-- **Security:** The security relies on the secrecy of the key. If the key is compromised, the encrypted data can be decrypted.
-
-**Common Algorithms:**
-- **AES (Advanced Encryption Standard)**
-- **DES (Data Encryption Standard)**
-- **3DES (Triple DES)**
-- **RC4**
-
-**Scenarios:**
-- **Bulk Data Encryption:** Suitable for encrypting large amounts of data quickly.
-- **Internal Communications:** Used within an organization where the key can be securely managed.
-- **Database Encryption:** Protecting sensitive data stored in databases.
-
-**Example:**
-A company encrypts its customer database using AES. The same key is used to encrypt and decrypt the data whenever access is needed.
-
-#### Asymmetric Encryption
-
-**Principles:**
-- **Key Pair:** Uses a pair of keys – a public key for encryption and a private key for decryption.
-- **Public and Private Keys:** The public key can be shared openly, while the private key must remain confidential.
-- **Security:** Provides stronger security for key distribution and management.
-
-**Common Algorithms:**
-- **RSA (Rivest-Shamir-Adleman)**
-- **DSA (Digital Signature Algorithm)**
-- **ECC (Elliptic Curve Cryptography)**
-
-**Scenarios:**
-- **Secure Communications:** Used in secure email and messaging systems where users exchange public keys.
-- **Digital Signatures:** Verifying the authenticity and integrity of a message or document.
-- **SSL/TLS:** Securing internet communications, such as HTTPS, ensuring safe data transmission between a web server and a browser.
-
-**Example:**
-An online banking system uses RSA to encrypt transactions. The bank's public key encrypts the transaction data, which can only be decrypted by the bank's private key, ensuring secure communication.
-
-#### Comparing Symmetric and Asymmetric Encryption
-
-| **Aspect**            | **Symmetric Encryption**                | **Asymmetric Encryption**               |
-|-----------------------|-----------------------------------------|-----------------------------------------|
-| **Key Used**          | Same key for encryption and decryption  | Public and private key pair             |
-| **Speed**             | Faster                                  | Slower                                  |
-| **Security**          | Key management is critical              | Enhanced security for key distribution  |
-| **Use Cases**         | Bulk data encryption, internal systems  | Secure communications, digital signatures |
-
-**Memorization Hints**
-
-To remember the differences between symmetric and asymmetric encryption, think of:
-**"Symmetric Same, Asymmetric Pair"**
-
-**Mnemonic for principles**:
-- **Symmetric:** "Single key, Speedy"
-- **Asymmetric:** "Pair of keys, Public-Private"
+| **Feature**                 | **Symmetric Encryption**                         | **Asymmetric Encryption**                              |
+| --------------------------- | ------------------------------------------------ | ------------------------------------------------------ |
+| **Key Usage**               | Same key for encryption and decryption           | Public key for encryption, private key for decryption  |
+| **Speed**                   | Generally faster                                 | Generally slower                                       |
+| **Key Management**          | Difficult due to secure distribution requirement | Easier, as public key can be freely distributed        |
+| **Security**                | Secure as long as the key remains secret         | High security, especially with large key sizes         |
+| **Key Length**              | Typically 128-256 bits                           | Typically 1024-4096 bits                               |
+| **Algorithm Examples**      | AES, DES, Blowfish                               | RSA, ECC, DSA                                          |
+| **Best Suited For**         | Encrypting large amounts of data                 | Secure key exchange, digital signatures                |
+| **Confidentiality**         | Provides confidentiality if key is kept secret   | Provides confidentiality through public key encryption |
+| **Use Cases**               | File encryption, disk encryption                 | SSL/TLS, email encryption, digital certificates        |
+| **Complexity**              | Simpler algorithms                               | More complex algorithms                                |
+| **Key Distribution**        | Challenging; secure channels required            | Easier; public keys can be distributed openly          |
+| **Computational Resources** | Requires fewer resources                         | Requires more computational power                      |
 
 ### Symmetric Encryption
 
@@ -985,7 +899,7 @@ Memorization Hints and Keys to Remember
 
 Understanding SHA algorithms involves grasping their purpose, the structure of input and output, and the detailed steps involved in processing data to produce a secure hash value.
 
-## Unit II: Account & Data Security
+## Account & Data Security
 
 In Unit II, we delve into the critical aspects of **Account & Data Security** in the realm of cybersecurity. This unit focuses on safeguarding sensitive information and ensuring secure access mechanisms. Understanding these concepts is essential not only for protecting personal and organizational data but also for maintaining trust and integrity in digital interactions.
 
@@ -2294,7 +2208,7 @@ A Man-in-the-Middle (MitM) attack is a cyber security attack where a malicious a
 
 Understanding MitM attack methods and implementing robust security measures are essential for safeguarding data privacy, preventing unauthorized access, and maintaining secure communication channels in digital environments.
 
-## Unit - III Network & System Security
+## Network & System Security
 
 Unit - III Network & System Security explores critical aspects of safeguarding digital infrastructures against diverse cyber threats. This unit delves into the intricacies of protecting networks, data, and systems from unauthorized access, malicious attacks, and vulnerabilities. From understanding web security threats to deploying encryption protocols, it equips learners with essential knowledge to fortify digital communications and ensure the integrity, confidentiality, and availability of information. This section will empower readers to comprehend the importance of secure communication protocols like SSL/TLS, digital signatures, and VPNs, thereby preparing them to tackle contemporary cybersecurity challenges effectively.
 
@@ -2357,6 +2271,52 @@ Network ports are essential elements in networking that facilitate communication
 - **Port Scanning**: Regularly scan network ports to detect unauthorized services or potential vulnerabilities that could be exploited by attackers.
 
 Understanding the role and management of network ports is essential for network administrators and cybersecurity professionals to ensure efficient and secure communication across networks while mitigating potential security risks.
+
+### HTTPS
+
+HTTPS (HyperText Transfer Protocol Secure) is a secure extension of HTTP, the protocol used for transferring data between a web browser and a web server over the internet. HTTPS encrypts the data exchanged between the client (e.g., web browser) and the server (e.g., web server), ensuring confidentiality and integrity of information transmitted. Here’s a detailed explanation of HTTPS:
+
+#### Purpose and Functionality
+
+- **Encryption**: HTTPS uses SSL/TLS protocols to encrypt data transmitted between the client and server. This encryption prevents unauthorized parties from intercepting and reading sensitive information, such as login credentials, credit card numbers, and personal data.
+
+- **Data Integrity**: HTTPS ensures that data remains intact and unaltered during transmission. It uses cryptographic hash functions and digital signatures to verify the integrity of data exchanged between parties.
+
+- **Authentication**: HTTPS authenticates the identity of websites using digital certificates issued by Certificate Authorities (CAs). These certificates contain public keys that clients use to establish a secure connection and verify the authenticity of the server.
+
+#### HTTPS Implementation
+
+1. **SSL/TLS Handshake**: 
+   - **Client Hello**: The client initiates the connection by sending a "Client Hello" message to the server, indicating supported SSL/TLS versions and cipher suites.
+   - **Server Hello**: The server responds with a "Server Hello" message, selecting the highest SSL/TLS version and cipher suite supported by both parties.
+   - **Certificate Exchange**: The server sends its digital certificate to the client, which includes its public key and is used for authentication.
+   - **Session Key Exchange**: Both client and server agree on session keys used for symmetric encryption of data transmitted during the HTTPS session.
+
+2. **Data Transmission**: 
+   - Once the SSL/TLS handshake is complete and a secure connection is established, data exchanged between the client and server is encrypted using symmetric encryption (e.g., AES).
+
+3. **Certificate Validation**: 
+   - The client verifies the server's digital certificate against a list of trusted Certificate Authorities (CAs) installed in the client's web browser or operating system.
+   - If the certificate is valid, issued by a trusted CA, and matches the domain name of the website, HTTPS is established.
+
+#### Benefits of HTTPS
+
+- **Security**: Protects sensitive data from interception and eavesdropping, ensuring confidentiality.
+- **Trust**: Verifies the identity of websites, preventing phishing and man-in-the-middle attacks.
+- **SEO**: Google and other search engines prioritize HTTPS websites in search rankings, encouraging adoption for better visibility.
+
+#### HTTPS and Website Security
+
+- **Implementation**: Website owners obtain SSL/TLS certificates from trusted CAs and configure their web servers to use HTTPS.
+- **Browser Indicators**: Web browsers indicate secure HTTPS connections with a padlock icon and "https://" prefix in the URL bar, reassuring users of a secure connection.
+
+#### Memorization Hints and Keys to Remember
+
+- **Encryption**: HTTPS ensures **confidentiality** through encryption.
+- **Authentication**: It provides **authentication** of websites using digital certificates.
+- **Data Integrity**: HTTPS guarantees **data integrity** to prevent tampering.
+
+Understanding HTTPS is crucial for ensuring secure communication and protecting user privacy on the internet. It has become the standard for transmitting sensitive information securely across websites, enhancing trust and security in online interactions.
 
 ### SSL (Secure Sockets Layer)
 
@@ -2570,52 +2530,6 @@ Digital certificates are electronic documents used to verify the identity of ind
 
 Understanding digital certificates is essential for establishing secure communication channels, verifying identities, and ensuring data confidentiality and integrity in various digital interactions and transactions. They are fundamental in building trust and security across the internet and digital ecosystems.
 
-### HTTPS
-
-HTTPS (HyperText Transfer Protocol Secure) is a secure extension of HTTP, the protocol used for transferring data between a web browser and a web server over the internet. HTTPS encrypts the data exchanged between the client (e.g., web browser) and the server (e.g., web server), ensuring confidentiality and integrity of information transmitted. Here’s a detailed explanation of HTTPS:
-
-#### Purpose and Functionality
-
-- **Encryption**: HTTPS uses SSL/TLS protocols to encrypt data transmitted between the client and server. This encryption prevents unauthorized parties from intercepting and reading sensitive information, such as login credentials, credit card numbers, and personal data.
-
-- **Data Integrity**: HTTPS ensures that data remains intact and unaltered during transmission. It uses cryptographic hash functions and digital signatures to verify the integrity of data exchanged between parties.
-
-- **Authentication**: HTTPS authenticates the identity of websites using digital certificates issued by Certificate Authorities (CAs). These certificates contain public keys that clients use to establish a secure connection and verify the authenticity of the server.
-
-#### HTTPS Implementation
-
-1. **SSL/TLS Handshake**: 
-   - **Client Hello**: The client initiates the connection by sending a "Client Hello" message to the server, indicating supported SSL/TLS versions and cipher suites.
-   - **Server Hello**: The server responds with a "Server Hello" message, selecting the highest SSL/TLS version and cipher suite supported by both parties.
-   - **Certificate Exchange**: The server sends its digital certificate to the client, which includes its public key and is used for authentication.
-   - **Session Key Exchange**: Both client and server agree on session keys used for symmetric encryption of data transmitted during the HTTPS session.
-
-2. **Data Transmission**: 
-   - Once the SSL/TLS handshake is complete and a secure connection is established, data exchanged between the client and server is encrypted using symmetric encryption (e.g., AES).
-
-3. **Certificate Validation**: 
-   - The client verifies the server's digital certificate against a list of trusted Certificate Authorities (CAs) installed in the client's web browser or operating system.
-   - If the certificate is valid, issued by a trusted CA, and matches the domain name of the website, HTTPS is established.
-
-#### Benefits of HTTPS
-
-- **Security**: Protects sensitive data from interception and eavesdropping, ensuring confidentiality.
-- **Trust**: Verifies the identity of websites, preventing phishing and man-in-the-middle attacks.
-- **SEO**: Google and other search engines prioritize HTTPS websites in search rankings, encouraging adoption for better visibility.
-
-#### HTTPS and Website Security
-
-- **Implementation**: Website owners obtain SSL/TLS certificates from trusted CAs and configure their web servers to use HTTPS.
-- **Browser Indicators**: Web browsers indicate secure HTTPS connections with a padlock icon and "https://" prefix in the URL bar, reassuring users of a secure connection.
-
-#### Memorization Hints and Keys to Remember
-
-- **Encryption**: HTTPS ensures **confidentiality** through encryption.
-- **Authentication**: It provides **authentication** of websites using digital certificates.
-- **Data Integrity**: HTTPS guarantees **data integrity** to prevent tampering.
-
-Understanding HTTPS is crucial for ensuring secure communication and protecting user privacy on the internet. It has become the standard for transmitting sensitive information securely across websites, enhancing trust and security in online interactions.
-
 ### SSH (Secure Shell)
 
 SSH (Secure Shell) is a cryptographic network protocol used for secure remote login, command execution, and data communication over unsecured networks. It provides strong encryption and authentication mechanisms to protect sensitive information transmitted between clients (e.g., computers) and servers (e.g., remote hosts). Here’s a detailed explanation of SSH:
@@ -2779,11 +2693,11 @@ Understanding WAPs is crucial for deploying secure and reliable wireless network
 
 Understanding VPNs is essential for safeguarding sensitive information, ensuring secure remote access, and maintaining privacy while accessing the internet from various locations worldwide.
 
-## Unit - IV Ethical Hacking
+## Ethical Hacking
 
 In the realm of cybersecurity, the concept of ethical hacking stands as a powerful tool in the defense against malicious cyber threats. Ethical hackers, also known as white-hat hackers, employ their skills to identify vulnerabilities and weaknesses within systems before malicious actors can exploit them. This unit delves into the principles, methodologies, and terminology essential to ethical hacking, offering insights into the proactive strategies used to fortify digital infrastructures. Through an exploration of hacking techniques, tools, and ethical guidelines, this unit aims to equip learners with the knowledge and skills needed to uphold security in an increasingly interconnected digital landscape.
 
-### Basics of Hacking
+### Hacking Basics
 
 Hacking, in its essence, is the process of exploiting vulnerabilities in computer systems, networks, or software applications to gain unauthorized access or control over them. It can be categorized into various types based on the intent and legality of the activities involved, and it is crucial to distinguish between ethical and unethical hacking practices.
 
@@ -3891,7 +3805,7 @@ Session hijacking is a cyber attack where an unauthorized person takes over a le
 
 Session hijacking poses a significant threat to the security and integrity of online sessions, allowing attackers to impersonate legitimate users and gain unauthorized access to sensitive information. Organizations and individuals must implement robust security measures, including encryption, secure session management practices, multi-factor authentication, and user education, to protect against session hijacking and safeguard the confidentiality and integrity of data exchanged over networks. By adopting a proactive approach to session security, organizations can mitigate the risks associated with session hijacking and maintain trust with their users and stakeholders.
 
-## Unit V: Cyber Crime & Cyber Forensics
+## Cyber Crime & Cyber Forensics
 
 In today's interconnected digital world, the prevalence of cybercrime poses significant challenges to individuals, organizations, and governments alike. Unit V explores the multifaceted landscape of cybercrime and the pivotal role of cyber forensics in investigating and combating these malicious activities. This unit delves into understanding the nature, types, and impacts of cybercrime, emphasizing the importance of proactive measures and robust forensic techniques to secure digital environments.
 
