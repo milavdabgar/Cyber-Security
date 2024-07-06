@@ -11,8 +11,11 @@ In today's digital age, the importance of cyber security cannot be overstated. W
 ### Why This Book?
 
 - **Exam-Oriented:** This book is structured to help you excel in your exams. Each chapter is concise, easy to understand, and focuses on key concepts that are frequently tested.
+  
 - **Easy to Memorize:** We use various memory aids, such as mnemonics and short keys, to help you remember important information effortlessly.
-- **Clear and Concise:** The content is written in a simple language, with complex ideas broken down into digestible sections. Key points are highlighted using **bold**, *italics*, and bullet points.
+
+- **Clear and Concise:** The content is written in simple language, with complex ideas broken down into digestible sections. Key points are highlighted using bold, italics, and bullet points.
+
 - **Practical Insights:** Alongside theoretical knowledge, this book includes practical examples and real-world applications to help you understand the relevance of cyber security in everyday life.
 
 ### How to Use This Book
@@ -146,7 +149,7 @@ Risk in cyber security refers to the potential for loss or damage when a threat 
 - **Vulnerability:** Weaknesses that could be exploited.
 - **Impact:** The potential damage or loss.
 
-Security Policy
+#### Security Policy
 
 A security policy is a formal set of rules and practices that define how an organization manages, protects, and distributes sensitive information. It outlines responsibilities and expected behaviors to ensure security.
 
@@ -197,7 +200,7 @@ To remember these key terms, use the following mnemonic:
 - **T**hreat
 - **V**ulnerability
 
-### Security Attacks, Mechanisms, and Services
+### OSI Model: Security Attacks, Mechanisms, and Services
 
 Understanding security attacks, mechanisms, and services in relation to the OSI (Open Systems Interconnection) model is crucial for designing and implementing robust security measures across different layers of a network. The OSI model has seven layers, each with specific security concerns and countermeasures.
 
@@ -449,6 +452,272 @@ Cryptography is the science and art of securing communication and data through t
 
 Cryptography is an essential component of modern information security, providing the foundation for secure communication, data protection, and trust in digital systems. Its continued evolution and application are crucial in addressing emerging security challenges and protecting sensitive information in an increasingly interconnected world.
 
+### Substitution and Transposition Techniques in Cryptography
+
+Cryptographic techniques are used to convert plaintext into ciphertext to secure the data. Two basic techniques used in classical cryptography are substitution and transposition. Here’s an in-depth explanation of both:
+
+#### Substitution Techniques
+
+**Definition**: Substitution techniques replace elements of the plaintext with corresponding elements of the ciphertext. Each character or group of characters in the plaintext is systematically replaced with a different character or group of characters.
+
+**Types**:
+1. **Caesar Cipher**:
+   - **Description**: Each letter in the plaintext is shifted a certain number of places down the alphabet.
+   - **Example**: With a shift of 3, A becomes D, B becomes E, etc.
+   - **Plaintext**: HELLO
+   - **Ciphertext**: KHOOR
+
+2. **Monoalphabetic Cipher**:
+   - **Description**: Each letter of the plaintext is mapped to a letter in the ciphertext alphabet.
+   - **Example**: Using a random substitution:
+   - **Plaintext**: HELLO
+   - **Ciphertext**: IFMMP (example using a shift of 1)
+
+3. **Playfair Cipher**:
+   - **Description**: Encrypts pairs of letters using a 5x5 matrix containing a keyword.
+   - **Example**: Using "KEYWORD" as the key:
+   - **Plaintext**: HELLO
+   - **Ciphertext**: IKFRPQ
+
+4. **Vigenère Cipher**:
+   - **Description**: Uses a keyword to shift letters in the plaintext.
+   - **Example**: Using "KEY" as the keyword:
+   - **Plaintext**: HELLO
+   - **Ciphertext**: RIJVS
+
+5. **Hill Cipher**:
+   - **Description**: Uses linear algebra and matrix multiplication to encrypt blocks of text.
+   - **Example**: Using a 2x2 key matrix:
+   - **Plaintext**: HELLO (converted to numbers and multiplied by the key matrix)
+
+**Advantages**:
+- Simple and easy to implement.
+- Suitable for small data sizes.
+
+**Disadvantages**:
+- Vulnerable to frequency analysis attacks, especially monoalphabetic ciphers.
+- Less secure if the key or substitution method is known.
+
+#### Transposition Techniques
+
+**Definition**: Transposition techniques rearrange the characters of the plaintext according to a certain system, keeping the same characters but changing their positions.
+
+**Types**:
+1. **Rail Fence Cipher**:
+   - **Description**: Writes the message in a zigzag pattern across multiple "rails" and then reads off each row.
+   - **Example**:
+     - **Plaintext**: HELLO
+     - **Rails**:
+       ```
+       H   L   O
+        E L
+       ```
+     - **Ciphertext**: HLOEL
+
+2. **Columnar Transposition**:
+   - **Description**: Writes the message in a grid and then reads the columns in a specified order.
+   - **Example**: Using the keyword "ZEBRA" to determine column order:
+     - **Plaintext**: HELLO
+     - **Grid**:
+       ```
+       Z E B R A
+       H E L L O
+       ```
+     - **Ciphertext**: EHLLO
+
+3. **Route Cipher**:
+   - **Description**: Places the message in a grid and specifies a route to read off the characters.
+   - **Example**:
+     - **Plaintext**: HELLO
+     - **Grid**:
+       ```
+       H E
+       L L
+       O
+       ```
+     - **Route**: Diagonally, zigzag, or spiral.
+
+**Advantages**:
+- Less vulnerable to frequency analysis because the letters retain their frequencies.
+- Increases the complexity of ciphertext, making it harder to break.
+
+**Disadvantages**:
+- Still vulnerable to pattern analysis if the method of transposition is known.
+- Requires more computation and may need padding for incomplete blocks.
+
+#### Comparison and Usage
+
+| **Feature**            | **Substitution Techniques**                            | **Transposition Techniques**                           |
+|------------------------|--------------------------------------------------------|--------------------------------------------------------|
+| **Operation**          | Replace characters                                     | Rearrange characters                                   |
+| **Key Dependency**     | Directly depends on the substitution rule              | Depends on the transposition rule                      |
+| **Security**           | Vulnerable to frequency analysis                       | Vulnerable to pattern analysis                         |
+| **Complexity**         | Simpler, easier to implement                           | More complex, harder to implement                      |
+| **Common Examples**    | Caesar Cipher, Monoalphabetic Cipher, Vigenère Cipher  | Rail Fence Cipher, Columnar Transposition              |
+| **Cryptanalysis**      | Frequency analysis, pattern recognition                | Pattern analysis, route analysis                       |
+
+### Caesar Cipher
+
+**Definition**:
+The Caesar Cipher is one of the simplest and oldest known encryption techniques. Named after Julius Caesar, who reportedly used it to communicate with his officials, the cipher involves shifting each letter in the plaintext by a fixed number of positions down the alphabet.
+
+**Mechanism**:
+1. **Choose a Shift Key**: Decide how many positions each letter in the plaintext will be shifted. For example, a shift of 3 means A becomes D, B becomes E, etc.
+2. **Encryption**: Replace each letter in the plaintext with the letter that is a fixed number of positions down the alphabet.
+3. **Decryption**: Replace each letter in the ciphertext with the letter that is the same number of positions up the alphabet.
+
+**Example**:
+Let's use a shift key of 3.
+
+- **Plaintext**: HELLO
+- **Shift Key**: 3
+
+**Encryption Process**:
+1. H -> K (H + 3 = K)
+2. E -> H (E + 3 = H)
+3. L -> O (L + 3 = O)
+4. L -> O (L + 3 = O)
+5. O -> R (O + 3 = R)
+
+**Ciphertext**: KHOOR
+
+**Decryption Process**:
+1. K -> H (K - 3 = H)
+2. H -> E (H - 3 = E)
+3. O -> L (O - 3 = L)
+4. O -> L (O - 3 = L)
+5. R -> O (R - 3 = O)
+
+**Decrypted Text**: HELLO
+
+**Detailed Steps**:
+
+1. **Alphabet**: Consider the English alphabet with 26 letters:
+   ```
+   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+   ```
+
+2. **Shift Key (3 in this example)**: This means each letter will be moved three places to the right.
+   - A -> D
+   - B -> E
+   - C -> F
+   - ...
+   - X -> A
+   - Y -> B
+   - Z -> C
+
+3. **Encryption**:
+   - Convert each letter of the plaintext to its corresponding letter using the shift.
+   - H (7th letter) -> K (10th letter)
+   - E (4th letter) -> H (7th letter)
+   - L (11th letter) -> O (14th letter)
+   - L (11th letter) -> O (14th letter)
+   - O (14th letter) -> R (17th letter)
+   
+   This gives us the ciphertext: KHOOR.
+
+4. **Decryption**:
+   - Reverse the shift process by moving each letter of the ciphertext back by the shift key.
+   - K (10th letter) -> H (7th letter)
+   - H (7th letter) -> E (4th letter)
+   - O (14th letter) -> L (11th letter)
+   - O (14th letter) -> L (11th letter)
+   - R (17th letter) -> O (14th letter)
+   
+   This returns the plaintext: HELLO.
+
+**Considerations**:
+
+- **Security**: The Caesar Cipher is not secure by modern standards because the key space is small (only 25 possible shifts for English), making it vulnerable to brute-force attacks and frequency analysis.
+- **Usability**: It's primarily of historical interest and used in teaching basic cryptographic concepts rather than practical applications.
+- **Variations**: Caesar Cipher can be generalized to shift any number of positions and can be applied to other alphabets and character sets.
+
+### Columnar Transposition Cipher
+
+**Definition**:
+The Columnar Transposition Cipher is a method of encryption that rearranges the characters of the plaintext according to a specified columnar pattern. The plaintext is written into a grid of fixed width, and the ciphertext is generated by reading the columns of the grid in a specified order.
+
+**Mechanism**:
+
+1. **Choose a Keyword**: The keyword determines the order of the columns.
+2. **Construct a Grid**: Write the plaintext into a grid with columns equal to the length of the keyword.
+3. **Number the Columns**: Number the columns based on the alphabetical order of the letters in the keyword.
+4. **Generate Ciphertext**: Read the columns in the numbered order to create the ciphertext.
+
+**Example**:
+Let's use the keyword "ZEBRA" and the plaintext "WEAREDISCOVEREDFLEEATONCE".
+
+**Step-by-Step Process**:
+
+1. **Keyword**: ZEBRA
+2. **Number the Columns**: Assign a number to each column based on the alphabetical order of the keyword.
+   - Z (5), E (2), B (1), R (4), A (3)
+   ```
+   Z E B R A
+   5 2 1 4 3
+   ```
+
+3. **Construct the Grid**: Write the plaintext in rows under the columns.
+   ```
+   Z  E  B  R  A
+   W  E  A  R  E
+   D  I  S  C  O
+   V  E  R  E  D
+   F  L  E  E  A
+   T  O  N  C  E
+   ```
+
+4. **Read Columns by Number**: Read the columns in the order of their numbers: 1, 2, 3, 4, 5.
+   ```
+   Column 1: A S R E N
+   Column 2: E I E L O
+   Column 3: E C D E A
+   Column 4: R E E F C
+   Column 5: W D V T E
+   ```
+
+5. **Generate Ciphertext**: Concatenate the columns read in the specified order.
+   - Column 1 (B): A S R E N
+   - Column 2 (E): E I E L O
+   - Column 3 (A): E C D E A
+   - Column 4 (R): R E E F C
+   - Column 5 (Z): W D V T E
+
+   **Ciphertext**: ASREN EILEO ECDEA REEFC WDTVE
+
+**Decryption Process**:
+
+1. **Reconstruct the Grid**: Write the ciphertext back into the grid using the same column order and keyword.
+   - Keyword: ZEBRA
+   - Number the columns: Z (5), E (2), B (1), R (4), A (3)
+   - Arrange ciphertext into columns based on the numbers.
+
+2. **Fill the Grid**:
+   ```
+   Column 1: A S R E N
+   Column 2: E I E L O
+   Column 3: E C D E A
+   Column 4: R E E F C
+   Column 5: W D V T E
+   ```
+
+3. **Reconstruct Plaintext**: Read row by row.
+   ```
+   W  E  A  R  E
+   D  I  S  C  O
+   V  E  R  E  D
+   F  L  E  E  A
+   T  O  N  C  E
+   ```
+
+   **Plaintext**: WEAREDISCOVEREDFLEEATONCE
+
+**Considerations**:
+
+- **Security**: More secure than simple substitution ciphers, but still vulnerable to certain cryptographic attacks, especially if the keyword is short or common.
+- **Usability**: Suitable for moderate security needs and teaching cryptographic concepts.
+- **Variations**: Variants include double transposition and irregular transposition grids to increase complexity.
+
 ### Symmetric vs Asymmetric Encryption
 
 | **Feature**                 | **Symmetric Encryption**                         | **Asymmetric Encryption**                              |
@@ -467,8 +736,6 @@ Cryptography is an essential component of modern information security, providing
 | **Computational Resources** | Requires fewer resources                         | Requires more computational power                      |
 
 ### Symmetric Encryption
-
-#### Overview
 
 Symmetric encryption, also known as secret-key encryption, is a method of encryption where the same key is used for both encrypting and decrypting data. This type of encryption is fundamental in the field of cyber security and is widely used due to its simplicity and speed.
 
@@ -558,8 +825,6 @@ Symmetric encryption, also known as secret-key encryption, is a method of encryp
    - Encrypting messages in instant messaging apps (e.g., Signal, WhatsApp) using symmetric encryption for speed and efficiency.
 
 ### Asymmetric Encryption
-
-#### Overview
 
 Asymmetric encryption, also known as public-key encryption, is a method of encryption that uses a pair of cryptographic keys: a public key and a private key. These keys are mathematically related but serve different functions. Asymmetric encryption is fundamental in ensuring secure communication, especially over untrusted networks like the Internet.
 
@@ -661,8 +926,6 @@ Asymmetric encryption is also crucial for digital signatures, which provide auth
    - Blockchain technology relies on asymmetric encryption for secure transactions and digital signatures.
 
 ### Hashing Algorithms
-
-#### Overview
 
 Hashing algorithms are cryptographic functions that transform an input (or message) into a fixed-size string of characters, which typically appears as a seemingly random sequence of letters and numbers. This output is known as a hash or digest. Hashing is essential for ensuring data integrity and authentication in digital communications.
 
@@ -857,7 +1120,6 @@ To remember the key aspects of the MD5 algorithm, think of:
 
 #### SHA Algorithm
 
-##### Definition and Purpose
 **SHA (Secure Hash Algorithm)** is a family of cryptographic hash functions designed by the National Security Agency (NSA) and published by the National Institute of Standards and Technology (NIST). They generate a fixed-size hash value from input data of arbitrary size, with SHA-1, SHA-256, SHA-384, and SHA-512 being the most commonly used variants.
 
 ##### Explanation of the Algorithm (SHA-256 Variant)
@@ -915,7 +1177,6 @@ By mastering the principles outlined in this unit, students will not only be equ
 
 ### Authentication
 
-#### Definition
 **Authentication** in cybersecurity refers to the process of verifying the identity of a user or system entity. It ensures that the entity seeking access to a system or network is indeed who or what it claims to be. Authentication forms the foundational pillar of access control mechanisms, establishing trust and enabling secure interactions within digital environments.
 
 #### Significance in Cybersecurity
@@ -951,8 +1212,6 @@ SSO allows users to authenticate once to gain access to multiple related systems
 Cookies are small text files stored on a user's device by websites to authenticate and track user sessions. While convenient for maintaining login states, they can pose security risks if improperly managed, such as session hijacking.
 
 #### Passwords
-
-##### Definition and Purpose
 
 Passwords are a widely used method of authentication that verifies a user's identity by requiring them to input a secret combination of characters. This method aims to ensure that only authorized individuals can access protected systems, accounts, or resources.
 
@@ -992,8 +1251,6 @@ Passwords are a widely used method of authentication that verifies a user's iden
 Passwords remain fundamental yet vulnerable authentication methods, requiring robust security practices and user awareness to mitigate risks effectively.
 
 #### Biometrics
-
-##### Definition and Purpose
 
 Biometrics authentication utilizes unique biological characteristics of individuals to verify their identity. Unlike traditional methods such as passwords or tokens, biometrics relies on physical traits that are difficult to forge or replicate, enhancing security and user convenience.
 
@@ -1045,8 +1302,6 @@ Biometrics authentication utilizes unique biological characteristics of individu
 Biometrics authentication offers a robust and user-friendly approach to identity verification, leveraging the uniqueness of biological characteristics to enhance security in various applications.
 
 #### Multi-factor Authentication (MFA)
-
-##### Definition and Purpose
 
 Multi-factor authentication (MFA) is a security measure that requires users to provide two or more verification factors to gain access to a system, application, or account. By combining multiple factors, MFA enhances security beyond traditional password-only methods, mitigating the risks of unauthorized access and account compromise.
 
@@ -1109,8 +1364,6 @@ MFA represents a robust approach to authentication, leveraging multiple factors 
 
 #### Single Sign-On (SSO)
 
-##### Definition and Purpose
-
 Single Sign-On (SSO) is an authentication process that allows users to access multiple applications or services with a single set of login credentials. Instead of requiring users to log in separately to each application, SSO enables seamless and secure access by verifying the user's identity once.
 
 ##### Mechanism
@@ -1164,8 +1417,6 @@ SSO represents a powerful solution for organizations seeking to improve user exp
 
 #### Cookies
 
-##### Definition and Purpose
-
 Cookies are small pieces of data stored on a user's device by websites to track user activity, maintain session states, and, in some cases, authenticate user sessions. While primarily used for session management and personalization, cookies can also play a role in authentication processes.
 
 ##### Mechanism
@@ -1218,8 +1469,6 @@ Cookies are small pieces of data stored on a user's device by websites to track 
 Cookies serve as a convenient mechanism for managing user sessions and personalizing web experiences but require careful implementation and security measures to mitigate risks and protect user data effectively.
 
 ### Authorization
-
-#### Definition
 
 Authorization in cybersecurity refers to the process of granting or denying access rights and privileges to authenticated users, systems, or applications based on their identity and defined permissions. It ensures that individuals or entities can only access resources or perform actions that are appropriate and permissible according to organizational policies and security requirements.
 
@@ -1311,8 +1560,6 @@ Understanding and implementing appropriate authorization methods are critical fo
 
 ### CAPTCHA
 
-#### Definition and Purpose
-
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a challenge-response test designed to distinguish between human users and automated bots on the internet. It serves as a security measure to prevent bots from performing actions that require human intelligence, such as creating accounts, submitting forms, or conducting malicious activities like spamming.
 
 #### Mechanism
@@ -1354,8 +1601,6 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 CAPTCHA remains a widely used and effective method to safeguard online interactions against automated bots, ensuring that digital environments maintain security and usability for legitimate human users.
 
 ### Firewall
-
-#### Definition and Purpose
 
 A firewall is a network security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted internal networks (e.g., corporate LAN) and untrusted external networks (e.g., the internet), enforcing access control policies to protect against unauthorized access, malware, and other cyber threats.
 
@@ -1453,8 +1698,6 @@ Malicious software, commonly known as malware, refers to any software intentiona
 
 #### Virus
 
-##### Definition
-
 A virus is a type of malicious software (malware) that infects computer systems by attaching itself to legitimate executable files or documents. Unlike standalone malware such as worms, viruses require user interaction or execution of infected files to propagate and cause harm. Once activated, viruses can replicate and spread across a computer network or to other systems, often with damaging effects.
 
 ##### Mechanism
@@ -1503,8 +1746,6 @@ Understanding viruses and implementing proactive measures are essential for miti
 
 #### Worm
 
-##### Definition
-
 A worm is a type of malicious software (malware) that operates independently, spreading across computer networks and systems without requiring user interaction to propagate. Unlike viruses, worms do not need to attach themselves to existing files or programs. Instead, they exploit network vulnerabilities or security weaknesses to replicate and distribute copies of themselves to other computers or devices.
 
 ##### Mechanism
@@ -1552,8 +1793,6 @@ A worm is a type of malicious software (malware) that operates independently, sp
 Understanding worms and implementing robust cybersecurity measures are essential for defending against their propagation and minimizing the impact of worm infections on computer systems, networks, and user data.
 
 #### Trojan Horse
-
-##### Definition
 
 A Trojan Horse, commonly referred to as a Trojan, is a type of malicious software (malware) that disguises itself as a legitimate or benign application to deceive users into installing or executing it. Unlike viruses and worms, Trojans do not self-replicate. Instead, they rely on social engineering tactics to trick users into downloading and running them, thereby compromising the security of the targeted system.
 
@@ -1618,8 +1857,6 @@ Understanding Trojans and their various forms is crucial for implementing effect
 
 #### Logical Bomb
 
-##### Definition
-
 A logical bomb, also known as a time bomb, is a type of malicious software or code that lies dormant within a system until triggered by specific conditions or events. Unlike viruses or worms, which spread and replicate, logical bombs do not self-propagate. Instead, they are designed to execute malicious actions at a predetermined time or when specific criteria are met, often causing significant disruption or damage to the affected system or network.
 
 ##### Mechanism
@@ -1673,8 +1910,6 @@ A logical bomb, also known as a time bomb, is a type of malicious software or co
 Understanding logical bombs and implementing proactive security measures are essential for detecting and mitigating the potential damage they can cause to systems, networks, and critical data assets.
 
 #### Keylogger
-
-##### Definition
 
 A keylogger, short for keystroke logger, is a type of surveillance software or hardware designed to record and monitor every keystroke typed on a computer or mobile device keyboard. Keyloggers capture keystrokes in real-time, including usernames, passwords, chat messages, emails, and other sensitive information, which are then covertly transmitted to the attacker or stored locally for later retrieval.
 
@@ -1730,8 +1965,6 @@ Understanding keyloggers and implementing robust security measures are essential
 
 #### Sniffer
 
-##### Definition
-
 A sniffer, also known as a network sniffer or packet sniffer, is a type of software or hardware tool used to monitor and capture network traffic in real-time. Sniffers intercept and analyze data packets transmitted over a network, allowing users to inspect the contents of network traffic, including usernames, passwords, email content, and other sensitive information.
 
 ##### Mechanism
@@ -1785,8 +2018,6 @@ A sniffer, also known as a network sniffer or packet sniffer, is a type of softw
 Understanding sniffers and their capabilities is crucial for network administrators and security professionals to maintain network integrity, detect potential threats, and safeguard sensitive information transmitted over networks.
 
 #### Backdoor
-
-##### Definition
 
 A backdoor is a hidden and unauthorized method of bypassing normal authentication or security controls in a computer system, network, or software application. It provides unauthorized access to the system, allowing attackers to gain remote control, execute commands, and manipulate system functionalities without detection. Backdoors are often intentionally inserted by developers for legitimate purposes but can be exploited maliciously if discovered or improperly managed.
 
@@ -1882,8 +2113,6 @@ Understanding these types of attacks is essential for implementing effective cyb
 
 #### Brute Force Attack
 
-##### Definition
-
 A brute force attack is a method of guessing passwords or encryption keys by systematically trying all possible combinations until the correct one is found. This attack relies on computational power and persistence to crack passwords, encryption keys, or authentication mechanisms that lack sufficient complexity or length.
 
 ##### Mechanism
@@ -1934,8 +2163,6 @@ Understanding the workings of brute force attacks is crucial for implementing ef
 
 #### Credential Stuffing Attack
 
-##### Definition
-
 Credential stuffing is a cyber attack method where attackers use large sets of compromised credentials (username-password pairs) obtained from previous data breaches to gain unauthorized access to user accounts on other online services. This attack exploits the tendency of users to reuse passwords across multiple accounts.
 
 ##### Mechanism
@@ -1981,8 +2208,6 @@ Credential stuffing is a cyber attack method where attackers use large sets of c
 Understanding credential stuffing attacks is crucial for both users and organizations to adopt proactive measures to protect against unauthorized account takeovers and data breaches resulting from password reuse vulnerabilities.
 
 #### Social Engineering Attack
-
-##### Definition
 
 Social engineering is a psychological manipulation technique used by attackers to trick individuals into divulging confidential information, performing actions, or compromising security protocols. Unlike traditional hacking methods that exploit technical vulnerabilities, social engineering exploits human psychology and trust to achieve malicious objectives.
 
@@ -2038,8 +2263,6 @@ Understanding social engineering tactics and implementing robust security measur
 
 #### Phishing
 
-##### Definition
-
 Phishing is a cyber attack method where attackers use fraudulent emails, messages, or websites to impersonate legitimate organizations or individuals. The goal is to deceive recipients into disclosing sensitive information, such as passwords, credit card numbers, or personal details, or to install malware by clicking on malicious links or downloading attachments.
 
 ##### Mechanism
@@ -2094,8 +2317,6 @@ Understanding phishing tactics and implementing proactive security measures are 
 
 #### Vishing
 
-##### Definition
-
 Vishing, short for "voice phishing," is a type of social engineering attack conducted over the phone. In vishing attacks, attackers impersonate legitimate entities, such as banks, government agencies, or tech support, to deceive individuals into divulging sensitive information, such as passwords, credit card numbers, or personal details.
 
 ##### Mechanism
@@ -2147,8 +2368,6 @@ Vishing, short for "voice phishing," is a type of social engineering attack cond
 Understanding vishing tactics and implementing effective countermeasures are crucial for protecting individuals and organizations from falling victim to telephone-based social engineering scams.
 
 #### Man-in-the-Middle (MitM) Attack
-
-##### Definition
 
 A Man-in-the-Middle (MitM) attack is a cyber security attack where a malicious actor intercepts and potentially alters communication between two parties who believe they are directly communicating with each other. The attacker inserts themselves into the communication process to eavesdrop on or manipulate the data exchanged between the parties.
 
