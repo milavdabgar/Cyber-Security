@@ -1,6 +1,8 @@
-# Summer 2024 Question Paper Solution
+## GTU Paper Solutions
 
-### Q.1 (a) Describe CIA triad with example. (03)
+### Summer 2024
+
+#### Q.1 (a) Describe CIA triad with example. (03)
 
 **CIA Triad:** The CIA Triad is a fundamental concept in cybersecurity, representing three core principles: Confidentiality, Integrity, and Availability. Each principle is essential for ensuring the security and reliability of information systems.
 
@@ -39,7 +41,7 @@
 
 **Summary:** The CIA Triad is critical in cybersecurity, ensuring that information is kept confidential, its integrity is maintained, and it is available to authorized users. Each element supports the others, creating a comprehensive security framework that protects information from various threats and vulnerabilities.
 
-### Q.1 (b) Explain Public key and Private Key cryptography. (04)
+#### Q.1 (b) Explain Public key and Private Key cryptography. (04)
 
 **Public Key Cryptography:**
 
@@ -90,7 +92,7 @@
 
 **Summary:** Both public key and private key cryptography are essential in the field of cybersecurity. Public key cryptography provides a robust method for secure key exchange and authentication, while private key cryptography is efficient for encrypting large volumes of data. Understanding their differences and applications helps in designing secure communication systems.
 
-### Q.1 (c) Explain various security services and security mechanism (07)
+#### Q.1 (c) Explain various security services and security mechanism (07)
 
 **Security Services:**
 
@@ -184,7 +186,7 @@
 **Summary:**
 Security services and mechanisms are crucial for safeguarding information systems. Services like confidentiality, integrity, authentication, non-repudiation, and access control ensure that data is protected from unauthorized access and alterations, while mechanisms like encryption, hashing, digital signatures, access control systems, firewalls, and intrusion detection systems implement these services effectively. Understanding these concepts helps in designing robust security frameworks.
 
-### Q1 (c) Explain MD5 hashing algorithm. (07)
+#### Q.1 (c) Explain MD5 hashing algorithm. (07)
 
 **MD5 Hashing Algorithm:**
 
@@ -250,7 +252,7 @@ Here, M[k] represents a 32-bit chunk of the current block, T[i] is a constant de
 **Conclusion:**
 The MD5 hashing algorithm, despite its historical significance and widespread use, has been rendered insecure due to collision vulnerabilities. It remains a useful tool for non-cryptographic applications but should be avoided for security-critical purposes.
 
-### Q.2 (a) What is firewall? List out types of firewall. (03)
+#### Q.2 (a) What is firewall? List out types of firewall. (03)
 
 **Firewall:**
 
@@ -319,7 +321,7 @@ The MD5 hashing algorithm, despite its historical significance and widespread us
 **Summary:**
 Firewalls are essential for protecting networks from unauthorized access and cyber threats. They come in various forms, each offering different levels of security and functionality. Understanding the different types of firewalls helps in selecting the right one based on the specific needs and security requirements of an organization.
 
-### Q.2 (b) Define: HTTPS and describe working of HTTPS. (04)
+#### Q.2 (b) Define: HTTPS and describe working of HTTPS. (04)
 
 **HTTPS:**
 
@@ -378,7 +380,7 @@ Firewalls are essential for protecting networks from unauthorized access and cyb
 
 HTTPS is a critical protocol for secure communication over the internet. By encrypting data and verifying server identity, it protects users from eavesdropping, tampering, and man-in-the-middle attacks. Understanding how HTTPS works helps in appreciating the importance of secure web browsing and online transactions.
 
-### Q.2 (c) Give explanation of active attack and passive attack in detail. (07)
+#### Q.2 (c) Give explanation of active attack and passive attack in detail. (07)
 
 **Active Attack:**
 
@@ -461,7 +463,7 @@ HTTPS is a critical protocol for secure communication over the internet. By encr
 
 Understanding the differences between active and passive attacks, along with their characteristics and mitigation strategies, is crucial for implementing effective security measures to protect information systems from various threats.
 
-### Q2 (a) What is digital signature ? Explain digital signature properties. (03)
+#### Q.2 (a) What is digital signature ? Explain digital signature properties. (03)
 
 **Digital Signature:**
 
@@ -497,7 +499,7 @@ A digital signature is a cryptographic technique used to validate the authentici
 **Conclusion:**
 Digital signatures are a critical component of modern cybersecurity, providing strong guarantees of authenticity, integrity, and non-repudiation. They are widely used in various applications to secure digital communications and transactions.
 
-### Q2 (b) Define : Trojans, Rootkit, Backdoors, Keylogger (04)
+#### Q.2 (b) Define : Trojans, Rootkit, Backdoors, Keylogger (04)
 
 **Definitions of Trojans, Rootkits, Backdoors, and Keyloggers:**
 
@@ -553,7 +555,7 @@ Digital signatures are a critical component of modern cybersecurity, providing s
 
 Understanding these malicious tools is crucial for implementing effective cybersecurity measures to protect systems and data from unauthorized access and exploitation.
 
-### Q.2 (c) "Explain Secure Socket Layer (SSL)." (07)
+#### Q.2 (c) Explain Secure Socket Layer (SSL). (07)
 
 **Secure Socket Layer (SSL):**
 
@@ -609,7 +611,7 @@ SSL, now deprecated in favor of its successor, Transport Layer Security (TLS), w
 
 SSL (Secure Socket Layer) was a cryptographic protocol used to secure data transmission over computer networks, emphasizing encryption, authentication, and data integrity. While deprecated in favor of TLS, SSL laid the foundation for secure communication protocols widely used today.
 
-### Q.3 (a) Explain in detail cybercrime and cybercriminal. (03)
+#### Q.3 (a) Explain in detail cybercrime and cybercriminal. (03)
 
 **Cybercrime:**
 
@@ -671,7 +673,7 @@ SSL (Secure Socket Layer) was a cryptographic protocol used to secure data trans
 
 Cybercrime encompasses a wide range of illegal activities conducted through computers or the internet. Cybercriminals leverage technical expertise to exploit vulnerabilities for financial gain, espionage, or disruption. Understanding cybercrime and cybercriminals is crucial for implementing effective cybersecurity measures and combating online threats.
 
-### Q.3 (b) Describe cyber stalking and cyber bullying in detail. (04)
+#### Q.3 (b) Describe cyber stalking and cyber bullying in detail. (04)
 
 **Cyber Stalking:**
 
@@ -738,7 +740,7 @@ Cybercrime encompasses a wide range of illegal activities conducted through comp
 
 Cyber stalking and cyber bullying are serious online behaviors that can have profound psychological, emotional, and social impacts on victims. Understanding these phenomena helps in raising awareness, implementing preventive measures, and providing support to those affected by online harassment and abuse.
 
-### Q.3 (c) Explain Property based classification in cybercrime. (07)
+#### Q.3 (c) Explain Property based classification in cybercrime. (07)
 
 **Property-Based Classification in Cybercrime:**
 
@@ -788,7 +790,7 @@ Cybercrimes can be classified based on the types of properties or assets targete
 
 Property-based classification in cybercrime categorizes criminal activities based on the types of assets targeted, including intellectual property, financial assets, personal information, system resources, digital property, and more. Understanding these classifications helps in developing comprehensive cybersecurity strategies and legal frameworks to combat cyber threats effectively.
 
-### Q3 (a) Explain Data diddling. (03)
+#### Q.3 (a) Explain Data diddling. (03)
 
 **Data Diddling:**
 
@@ -822,7 +824,7 @@ Data diddling refers to the unauthorized alteration of data before or during inp
 **Summary:**
 Data diddling is a subtle yet potentially devastating cyberattack that involves unauthorized changes to data before or during input into a computer system. It can lead to significant financial losses, legal issues, and reputational damage. Implementing robust access controls, maintaining audit trails, and conducting regular data audits are essential measures to prevent and detect data diddling.
 
-### Q3 (b) Explain cyber spying and cyber terrorism. (04)
+#### Q.3 (b) Explain cyber spying and cyber terrorism. (04)
 
 **Cyber Spying and Cyber Terrorism:**
 
@@ -871,7 +873,7 @@ Data diddling is a subtle yet potentially devastating cyberattack that involves 
 
 Both cyber spying and cyber terrorism pose significant threats to national security, economic stability, and public safety. Proactive measures, such as strong cybersecurity practices, collaboration, and public awareness, are essential to mitigate these threats.
 
-### Q3 (c) Explain article section 65 and section 66 of cyber law. (07)
+#### Q.3 (c) Explain article section 65 and section 66 of cyber law. (07)
 
 **Article Section 65 and Section 66 of Cyber Law:**
 
@@ -922,7 +924,7 @@ Section 66 covers a broad range of computer-related offenses, focusing on any di
 **Conclusion:**
 Sections 65 and 66 of cyber law play crucial roles in safeguarding digital information and systems. Section 65 focuses on protecting the integrity of computer source documents, ensuring that software and digital documents are not tampered with. Section 66 addresses a wider range of computer-related offenses, emphasizing the need to deter and penalize fraudulent and dishonest activities in the digital realm. Together, these sections contribute to a more secure and trustworthy digital environment.
 
-### Q.4 (a) "What is Hacking? List out types of Hackers." (03)
+#### Q.4 (a) What is Hacking? List out types of Hackers. (03)
 
 **What is Hacking?**
 
@@ -964,7 +966,7 @@ Sections 65 and 66 of cyber law play crucial roles in safeguarding digital infor
 
 Hacking encompasses a range of activities from ethical testing to malicious exploitation. Different types of hackers have varying motivations and methods, highlighting the importance of robust cybersecurity measures to protect against unauthorized access and data breaches.
 
-### Q.4 (b) "Explain Vulnerability and 0-Day terminology of Hacking." (04)
+#### Q.4 (b) Explain Vulnerability and 0-Day terminology of Hacking. (04)
 
 **Vulnerability:**
 
@@ -1014,7 +1016,7 @@ Hacking encompasses a range of activities from ethical testing to malicious expl
 
 Understanding vulnerabilities and 0-day exploits is essential for implementing effective cybersecurity measures. It involves proactive identification, mitigation, and response strategies to minimize the risk of exploitation and protect systems and data from malicious actors.
 
-### Q.4 (c) "Explain Five Steps of Hacking." (07)
+#### Q.4 (c) Explain Five Steps of Hacking. (07)
 
 **Five Steps of Hacking:**
 
@@ -1063,7 +1065,7 @@ Hacking often follows a systematic approach to exploit vulnerabilities and gain 
 
 The five steps of hacking illustrate the systematic approach hackers use to exploit vulnerabilities and compromise systems or networks. Understanding these steps is crucial for implementing effective cybersecurity measures, including vulnerability management, monitoring, and incident response.
 
-### Q4 (a) Explain any three basic commands of kali Linux with suitable example. (03)
+#### Q.4 (a) Explain any three basic commands of kali Linux with suitable example. (03)
 
 **Three Basic Commands of Kali Linux:**
 
@@ -1140,7 +1142,7 @@ The five steps of hacking illustrate the systematic approach hackers use to expl
 
 These basic commands are fundamental for navigating and managing files and directories in Kali Linux, providing the foundation for more advanced operations.
 
-### Q4 (b) Describe Session Hijacking in detail. (04)
+#### Q.4 (b) Describe Session Hijacking in detail. (04)
 
 **Session Hijacking:**
 
@@ -1190,7 +1192,7 @@ Session hijacking, also known as session sidejacking or cookie hijacking, is a t
 **Conclusion:**
 Session hijacking is a serious security threat that can lead to unauthorized access and significant damage. Implementing strong security measures, such as using secure communication channels, regenerating session IDs, and educating users on best practices, is crucial to protecting user sessions from being hijacked.
 
-### Q4 (c) Explain Remote Administration Tools. (07)
+#### Q.4 (c) Explain Remote Administration Tools. (07)
 
 **Remote Administration Tools (RATs):**
 
@@ -1276,7 +1278,7 @@ Remote Administration Tools (RATs) are software applications that allow administ
 **Conclusion:**
 Remote Administration Tools are powerful and versatile solutions that enhance the efficiency and effectiveness of IT administration. They offer a wide range of features for system management, monitoring, and security, enabling administrators to control and support remote systems seamlessly. However, ensuring the security of these tools is paramount to prevent unauthorized access and potential cyber threats.
 
-### Q.5 (a) "Explain Mobile forensics." (03)
+#### Q.5 (a) Explain Mobile forensics. (03)
 
 **Mobile Forensics:**
 
@@ -1324,7 +1326,7 @@ Mobile forensics is the process of recovering digital evidence from mobile devic
 
 Mobile forensics plays a crucial role in retrieving digital evidence from mobile devices to support investigations and legal proceedings. It involves acquiring, analyzing, and reporting on device data while adhering to forensic principles to ensure the integrity and admissibility of evidence.
 
-### Q.5 (b) "What is Digital forensics? Write down advantages of Digital forensics." (04)
+#### Q.5 (b) What is Digital forensics? Write down advantages of Digital forensics. (04)
 
 **Digital Forensics:**
 
@@ -1372,7 +1374,7 @@ Digital forensics involves the systematic examination of digital devices, data, 
 
 Digital forensics is crucial for uncovering digital evidence, supporting investigations, and ensuring legal admissibility of evidence in court. Its advantages include evidence preservation, investigative insights, legal compliance, incident response, risk mitigation, and support for various investigative and legal processes.
 
-### Q.5 (c) "Describe in detail Locard's Principle of exchange in Digital Forensics." (07)
+#### Q.5 (c) Describe in detail Locard's Principle of exchange in Digital Forensics. (07)
 
 **Locard's Principle of Exchange in Digital Forensics:**
 
@@ -1418,7 +1420,7 @@ Edmond Locard, a pioneer in forensic science, formulated the principle of exchan
 
 Locard's Principle of exchange in digital forensics underscores the importance of identifying, collecting, preserving, and analyzing digital evidence to reconstruct digital interactions, support investigations, and uphold legal standards. It highlights the transfer of digital traces between devices, users, and networks, emphasizing the traceability and analysis of digital evidence in forensic examinations.
 
-### Q5 (a) Explain Network forensics. (03)
+#### Q.5 (a) Explain Network forensics. (03)
 
 **Network Forensics:**
 
@@ -1471,7 +1473,7 @@ Network forensics is a sub-discipline of digital forensics that focuses on the m
 **Conclusion:**
 Network forensics is a crucial aspect of modern cybersecurity practices, providing the means to detect, investigate, and respond to network-based threats. By capturing and analyzing network traffic, organizations can uncover malicious activities, gather legal evidence, and enhance their overall security posture. Effective network forensics requires the right tools, expertise, and processes to manage and analyze the vast amounts of data involved.
 
-### Q5 (b) Explain why CCTV plays an important role as evidence in digital forensics investigations. (04)
+#### Q.5 (b) Explain why CCTV plays an important role as evidence in digital forensics investigations. (04)
 
 **Importance of CCTV in Digital Forensics Investigations:**
 
@@ -1509,7 +1511,7 @@ Closed-circuit television (CCTV) systems are critical in digital forensics inves
 **Conclusion:**
 CCTV plays a crucial role in digital forensics investigations by providing visual evidence that supports investigative processes, enhances situational awareness, and aids in the reconstruction of events. Its ability to document incidents in real time and preserve chain of custody strengthens its reliability and admissibility as evidence in legal proceedings.
 
-### Q5 (c) Explain phases of Digital forensic investigation. (07)
+#### Q.5 (c) Explain phases of Digital forensic investigation. (07)
 
 **Phases of Digital Forensic Investigation:**
 
