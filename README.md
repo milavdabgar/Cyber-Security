@@ -6,30 +6,18 @@ This Repository contains Study Materials of Cyber Security Subject being offered
 
 **Markdown Files (Source / GitHub App):**
 
-- [Cyber Security Books by MJD](Books/)
-- [Cyber Security Notes](Notes/CyberSecurity_Notes.md)
-- [Cyber Security Revision Notes](Notes/CyberSecurity_Revision_Notes.md)
-- [Cyber Security GTU Papers Solutions](Paper_Solutions/CyberSecurity_GTU_Paper_Solutions.md)
-
-**Latex PDF (Best for Prints):**
-
-- [Cyber Security Book by MJD](Books/CyberSecurity_Book_MJD_Latex.pdf)
-- [Cyber Security Notes](Notes/CyberSecurity_Notes_Latex.pdf)
-- [Cyber Security Revision Notes](Notes/CyberSecurity_Revision_Notes_Latex.pdf)
-- [Cyber Security GTU Papers Solutions](Paper_Solutions/CyberSecurity_GTU_Paper_Solutions_Latex.pdf)
-- [Cyber Security The Complete Reference](Books/CyberSecurity_The_Complete_Reference.pdf)
-- [IIT Madras Cyber Security Slides](Slides/2201_CyberSecurity_Slides.pdf)
-
-**This Repository also contains:**
-
-- Syllabus
-- Books
-- GTU Papers & Solutions
-- Lab Manuals
-- Practicals (Extra Codes for practice etc.)
-- Slides
+- [Cyber Security Book by MJD](Books/)
+- [Cyber Security Reference Books](Books/ReferenceBooks/)
+- [Cyber Security Notes](Notes/)
+- [Cyber Security GTU Papers Solutions](PaperSolutions/)
+- [Cyber Security Lab Resources](LabResources/)
+- [Cyber Security Lab Manuals](LabManuals/)
 
 Feel Free to Edit and Redistribute to Students.
+
+**Special Thanks**
+
+- **Proff. Ashish M Patel, Lecturer in EC, GPG Surat** for Lab Manuals and Lab Related Codes
 
 **For Suggested Edits:**
 
