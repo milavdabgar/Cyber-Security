@@ -1,17 +1,4 @@
-Seat No.: ________ Enrolment No.:______________
-GUJARAT TECHNOLOGICAL UNIVERSITY
-Diploma Engineering – SEMESTER – 5 (NEW) – EXAMINATION – Winter-2024
-Subject Code: 4353204 Date: 10-12-2024
-Subject Name: Cyber Security
-Time: 02:30 PM TO 05:00 PM Total Marks: 70
-
-Instructions:
-1. Attempt all questions.
-2. Make Suitable assumptions wherever necessary.
-3. Figures to the right indicate full marks.
-4. Use of programmable & Communication aids are strictly prohibited.
-5. Use of non-programmable scientific calculator is permitted.
-6. English version is authentic.
+# CS Question Bank
 
 Q.1 (a) Describe CIA triad with example.
 પ્રશ્ન.1 (અ) ઉદાહરણ સાથે CIA ત્રિપુટીનું વર્ણન કરો.
